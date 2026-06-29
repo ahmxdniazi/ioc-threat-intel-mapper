@@ -1,0 +1,42 @@
+[
+  {
+    "ioc": "56f1014eb2d145c957f9bc0843f4e506735d7821e16355bcfbb6150b1b5f39db",
+    "type": "Hash",
+    "malicious": 56,
+    "suspicious": 0,
+    "harmless": 0,
+    "verdict": "MALICIOUS"
+  },
+  {
+    "ioc": "99c1cd740fa749a163ce8cdf93722191c4ba5d97de81576623a8bbcb622473d6",
+    "type": "Hash",
+    "malicious": 60,
+    "suspicious": 0,
+    "harmless": 0,
+    "verdict": "MALICIOUS"
+  },
+  {
+    "ioc": "58e9cd249d947f829a6021cf6ab16c2ca8e83317dbe07a294e2035bb904d0cf3",
+    "type": "Hash",
+    "malicious": 55,
+    "suspicious": 0,
+    "harmless": 0,
+    "verdict": "MALICIOUS"
+  },
+  {
+    "ioc": "f1f82d3b62f92f4fe8af320afea6c346210bb51774bb1567149e308469d40c92",
+    "type": "Hash",
+    "malicious": 60,
+    "suspicious": 0,
+    "harmless": 0,
+    "verdict": "MALICIOUS"
+  },
+  {
+    "ioc": "ffcddd8544bca0acde69f49abd1ea9dbee5f4eb73df51dd456b401c045a0b6af",
+    "type": "Hash",
+    "malicious": 59,
+    "suspicious": 0,
+    "harmless": 0,
+    "verdict": "MALICIOUS"
+  }
+]

@@ -1,0 +1,61 @@
+<svg width="900" height="120" viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#07111f"/>
+      <stop offset="100%" style="stop-color:#0b1a30"/>
+    </linearGradient>
+    <linearGradient id="arr" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7dd3fc"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#7dd3fc"/>
+    </marker>
+  </defs>
+  <rect width="900" height="120" fill="url(#bg2)" rx="12"/>
+  <rect width="900" height="2" fill="url(#arr)" rx="1"/>
+
+  <!-- Step 1 -->
+  <rect x="20" y="25" width="150" height="70" rx="10" fill="#111a33" stroke="#7dd3fc" stroke-width="1.5"/>
+  <text x="95" y="52" font-family="Arial" font-size="20" text-anchor="middle">📄</text>
+  <text x="95" y="70" font-family="Arial" font-size="12" font-weight="700" fill="#7dd3fc" text-anchor="middle">Threat Reports</text>
+  <text x="95" y="85" font-family="Arial" font-size="10" fill="#b7c3df" text-anchor="middle">.txt input files</text>
+
+  <!-- Arrow 1 -->
+  <line x1="172" y1="60" x2="198" y2="60" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 2 -->
+  <rect x="200" y="25" width="150" height="70" rx="10" fill="#111a33" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="275" y="52" font-family="Arial" font-size="20" text-anchor="middle">🔍</text>
+  <text x="275" y="70" font-family="Arial" font-size="12" font-weight="700" fill="#a78bfa" text-anchor="middle">IOC Extraction</text>
+  <text x="275" y="85" font-family="Arial" font-size="10" fill="#b7c3df" text-anchor="middle">regex + whitelist</text>
+
+  <!-- Arrow 2 -->
+  <line x1="352" y1="60" x2="378" y2="60" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 3 -->
+  <rect x="380" y="25" width="150" height="70" rx="10" fill="#111a33" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="455" y="52" font-family="Arial" font-size="20" text-anchor="middle">🛡️</text>
+  <text x="455" y="70" font-family="Arial" font-size="12" font-weight="700" fill="#fbbf24" text-anchor="middle">VT Enrichment</text>
+  <text x="455" y="85" font-family="Arial" font-size="10" fill="#b7c3df" text-anchor="middle">VirusTotal API</text>
+
+  <!-- Arrow 3 -->
+  <line x1="532" y1="60" x2="558" y2="60" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 4 -->
+  <rect x="560" y="25" width="150" height="70" rx="10" fill="#111a33" stroke="#34d399" stroke-width="1.5"/>
+  <text x="635" y="52" font-family="Arial" font-size="20" text-anchor="middle">📊</text>
+  <text x="635" y="70" font-family="Arial" font-size="12" font-weight="700" fill="#34d399" text-anchor="middle">JSON Output</text>
+  <text x="635" y="85" font-family="Arial" font-size="10" fill="#b7c3df" text-anchor="middle">enriched IOCs</text>
+
+  <!-- Arrow 4 -->
+  <line x1="712" y1="60" x2="738" y2="60" stroke="#7dd3fc" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Step 5 -->
+  <rect x="740" y="25" width="145" height="70" rx="10" fill="#111a33" stroke="#fb7185" stroke-width="1.5"/>
+  <text x="812" y="52" font-family="Arial" font-size="20" text-anchor="middle">🌐</text>
+  <text x="812" y="70" font-family="Arial" font-size="12" font-weight="700" fill="#fb7185" text-anchor="middle">HTML Report</text>
+  <text x="812" y="85" font-family="Arial" font-size="10" fill="#b7c3df" text-anchor="middle">portfolio output</text>
+
+  <rect x="0" y="118" width="900" height="2" fill="url(#arr)" opacity="0.4" rx="1"/>
+</svg>

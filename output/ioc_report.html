@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IOC Threat Intelligence Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: #e8eefc;
+            padding: 40px;
+        }
+        h1 { color: #7dd3fc; font-size: 28px; }
+        .meta { color: #b7c3df; margin-bottom: 30px; font-size: 14px; }
+        .summary {
+            display: flex; gap: 20px; margin-bottom: 30px;
+        }
+        .stat {
+            background: #111a33;
+            border: 1px solid #263252;
+            border-radius: 12px;
+            padding: 16px 24px;
+            text-align: center;
+        }
+        .stat strong { display: block; font-size: 28px; color: #ff4d4d; }
+        .stat span { color: #b7c3df; font-size: 13px; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th {
+            background: #16223f;
+            padding: 12px;
+            text-align: left;
+            color: #7dd3fc;
+            border: 1px solid #263252;
+        }
+        td {
+            border: 1px solid #263252;
+            padding: 10px 12px;
+        }
+        tr:hover { background: #111a33; }
+    </style>
+</head>
+<body>
+    <h1>🔎 IOC Threat Intelligence Report</h1>
+    <div class="meta">
+        <p>Generated: 2026-06-29 10:29:26</p>
+        <p>Source: Akira Ransomware — Unit42 / Palo Alto Networks</p>
+        <p>Total IOCs Analyzed: <strong>5</strong></p>
+    </div>
+
+    <div class="summary">
+        <div class="stat">
+            <strong>5</strong>
+            <span>Malicious</span>
+        </div>
+        <div class="stat">
+            <strong style="color:#ffd700">0</strong>
+            <span>Not Found</span>
+        </div>
+        <div class="stat">
+            <strong style="color:#34d399">0</strong>
+            <span>Clean</span>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>IOC</th>
+            <th>Malicious Detections</th>
+            <th>Suspicious</th>
+            <th>Verdict</th>
+        </tr>
+        
+        <tr>
+            <td>Hash</td>
+            <td style='word-break:break-all;font-family:monospace;font-size:13px'>56f1014eb2d145c957f9bc0843f4e506735d7821e16355bcfbb6150b1b5f39db</td>
+            <td style='color:#ff4d4d;font-weight:700'>56</td>
+            <td style='color:#ffd700'>0</td>
+            <td style='color:#ff4d4d;font-weight:700'>🔴 MALICIOUS</td>
+        </tr>
+        <tr>
+            <td>Hash</td>
+            <td style='word-break:break-all;font-family:monospace;font-size:13px'>99c1cd740fa749a163ce8cdf93722191c4ba5d97de81576623a8bbcb622473d6</td>
+            <td style='color:#ff4d4d;font-weight:700'>60</td>
+            <td style='color:#ffd700'>0</td>
+            <td style='color:#ff4d4d;font-weight:700'>🔴 MALICIOUS</td>
+        </tr>
+        <tr>
+            <td>Hash</td>
+            <td style='word-break:break-all;font-family:monospace;font-size:13px'>58e9cd249d947f829a6021cf6ab16c2ca8e83317dbe07a294e2035bb904d0cf3</td>
+            <td style='color:#ff4d4d;font-weight:700'>55</td>
+            <td style='color:#ffd700'>0</td>
+            <td style='color:#ff4d4d;font-weight:700'>🔴 MALICIOUS</td>
+        </tr>
+        <tr>
+            <td>Hash</td>
+            <td style='word-break:break-all;font-family:monospace;font-size:13px'>f1f82d3b62f92f4fe8af320afea6c346210bb51774bb1567149e308469d40c92</td>
+            <td style='color:#ff4d4d;font-weight:700'>60</td>
+            <td style='color:#ffd700'>0</td>
+            <td style='color:#ff4d4d;font-weight:700'>🔴 MALICIOUS</td>
+        </tr>
+        <tr>
+            <td>Hash</td>
+            <td style='word-break:break-all;font-family:monospace;font-size:13px'>ffcddd8544bca0acde69f49abd1ea9dbee5f4eb73df51dd456b401c045a0b6af</td>
+            <td style='color:#ff4d4d;font-weight:700'>59</td>
+            <td style='color:#ffd700'>0</td>
+            <td style='color:#ff4d4d;font-weight:700'>🔴 MALICIOUS</td>
+        </tr>
+    </table>
+</body>
+</html>
