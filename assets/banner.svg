@@ -1,4 +1,4 @@
-<svg width="1280" height="320" viewBox="0 0 1280 320" xmlns="http://www.w3.org/2000/svg">
+<svg width="1280" height="340" viewBox="0 0 1280 340" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#07111f"/>
@@ -9,116 +9,139 @@
       <stop offset="0%" style="stop-color:#7dd3fc"/>
       <stop offset="100%" style="stop-color:#fbbf24"/>
     </linearGradient>
-    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#7dd3fc;stop-opacity:0.15"/>
-      <stop offset="100%" style="stop-color:#fbbf24;stop-opacity:0.05"/>
-    </linearGradient>
-    <filter id="blur">
-      <feGaussianBlur stdDeviation="20"/>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="25"/>
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="1280" height="320" fill="url(#bg)"/>
+  <rect width="1280" height="340" fill="url(#bg)"/>
 
   <!-- Glow blobs -->
-  <ellipse cx="200" cy="160" rx="300" ry="150" fill="#7dd3fc" opacity="0.04" filter="url(#blur)"/>
-  <ellipse cx="1100" cy="160" rx="250" ry="120" fill="#fbbf24" opacity="0.05" filter="url(#blur)"/>
+  <ellipse cx="160" cy="170" rx="280" ry="140" fill="#7dd3fc" opacity="0.04" filter="url(#glow)"/>
+  <ellipse cx="1120" cy="170" rx="220" ry="120" fill="#fbbf24" opacity="0.05" filter="url(#glow)"/>
 
   <!-- Grid lines -->
-  <g stroke="#1a2a4a" stroke-width="1" opacity="0.6">
-    <line x1="0" y1="53" x2="1280" y2="53"/>
-    <line x1="0" y1="106" x2="1280" y2="106"/>
-    <line x1="0" y1="160" x2="1280" y2="160"/>
-    <line x1="0" y1="213" x2="1280" y2="213"/>
-    <line x1="0" y1="266" x2="1280" y2="266"/>
-    <line x1="128" y1="0" x2="128" y2="320"/>
-    <line x1="256" y1="0" x2="256" y2="320"/>
-    <line x1="384" y1="0" x2="384" y2="320"/>
-    <line x1="512" y1="0" x2="512" y2="320"/>
-    <line x1="640" y1="0" x2="640" y2="320"/>
-    <line x1="768" y1="0" x2="768" y2="320"/>
-    <line x1="896" y1="0" x2="896" y2="320"/>
-    <line x1="1024" y1="0" x2="1024" y2="320"/>
-    <line x1="1152" y1="0" x2="1152" y2="320"/>
+  <g stroke="#1a2a4a" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="68" x2="1280" y2="68"/>
+    <line x1="0" y1="136" x2="1280" y2="136"/>
+    <line x1="0" y1="204" x2="1280" y2="204"/>
+    <line x1="0" y1="272" x2="1280" y2="272"/>
+    <line x1="160" y1="0" x2="160" y2="340"/>
+    <line x1="320" y1="0" x2="320" y2="340"/>
+    <line x1="480" y1="0" x2="480" y2="340"/>
+    <line x1="640" y1="0" x2="640" y2="340"/>
+    <line x1="800" y1="0" x2="800" y2="340"/>
+    <line x1="960" y1="0" x2="960" y2="340"/>
+    <line x1="1120" y1="0" x2="1120" y2="340"/>
   </g>
 
-  <!-- Accent top bar -->
+  <!-- Top accent bar -->
   <rect x="0" y="0" width="1280" height="3" fill="url(#accent)"/>
 
-  <!-- Left side: shield icon area -->
-  <g transform="translate(80, 90)">
-    <!-- Outer hex -->
-    <polygon points="70,0 140,40 140,120 70,160 0,120 0,40" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.3"/>
-    <!-- Inner hex -->
-    <polygon points="70,20 120,48 120,112 70,140 20,112 20,48" fill="none" stroke="#7dd3fc" stroke-width="1" opacity="0.2"/>
-    <!-- Shield -->
-    <path d="M70,35 L100,50 L100,95 Q100,120 70,130 Q40,120 40,95 L40,50 Z" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.8"/>
-    <!-- Checkmark in shield -->
-    <polyline points="55,82 66,93 88,68" fill="none" stroke="#34d399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- Orbit dots -->
-    <circle cx="0" cy="80" r="4" fill="#7dd3fc" opacity="0.6"/>
-    <circle cx="140" cy="80" r="4" fill="#fbbf24" opacity="0.6"/>
-    <circle cx="70" cy="0" r="3" fill="#7dd3fc" opacity="0.4"/>
-    <circle cx="70" cy="160" r="3" fill="#fbbf24" opacity="0.4"/>
+  <!-- ── LEFT: Shield Icon ── -->
+  <g transform="translate(42, 110)">
+    <polygon points="60,0 120,34 120,102 60,136 0,102 0,34"
+             fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.25"/>
+    <path d="M60,28 L90,43 L90,88 Q90,112 60,122 Q30,112 30,88 L30,43 Z"
+          fill="#0d1830" stroke="#7dd3fc" stroke-width="1.8" opacity="0.9"/>
+    <polyline points="45,76 57,88 78,63"
+              fill="none" stroke="#34d399" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0"   cy="68" r="3.5" fill="#7dd3fc" opacity="0.5"/>
+    <circle cx="120" cy="68" r="3.5" fill="#fbbf24" opacity="0.5"/>
+    <circle cx="60"  cy="0"  r="3"   fill="#7dd3fc" opacity="0.35"/>
+    <circle cx="60"  cy="136" r="3"  fill="#fbbf24" opacity="0.35"/>
   </g>
 
-  <!-- Main title -->
-  <text x="270" y="118" font-family="'Courier New', monospace" font-size="42" font-weight="700" fill="url(#accent)">IOC Threat Intel Mapper</text>
+  <!-- ── CENTRE BLOCK (title + subtitle + tags) ── -->
+  <!-- Title -->
+  <text x="200" y="122"
+        font-family="'Courier New', Courier, monospace"
+        font-size="40" font-weight="700"
+        fill="url(#accent)">IOC Threat Intel Mapper</text>
 
   <!-- Subtitle -->
-  <text x="272" y="158" font-family="'Courier New', monospace" font-size="17" fill="#b7c3df" letter-spacing="2">Automated IOC Extraction · VirusTotal Enrichment · HTML Reporting</text>
+  <text x="202" y="158"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="15" fill="#b7c3df" letter-spacing="1.5">
+    Automated IOC Extraction  ·  VirusTotal Enrichment  ·  HTML Reporting
+  </text>
 
-  <!-- Accent line -->
-  <rect x="270" y="172" width="680" height="2" fill="url(#accent)" opacity="0.5" rx="1"/>
+  <!-- Thin divider line -->
+  <rect x="200" y="172" width="620" height="2" rx="1" fill="url(#accent)" opacity="0.45"/>
 
-  <!-- Tags -->
-  <g transform="translate(272, 192)">
-    <!-- Tag 1 -->
-    <rect x="0" y="0" width="110" height="28" rx="14" fill="#1a2a4a" stroke="#7dd3fc" stroke-width="1" opacity="0.8"/>
-    <text x="55" y="19" font-family="Arial" font-size="12" fill="#7dd3fc" text-anchor="middle">🐍 Python</text>
-    <!-- Tag 2 -->
-    <rect x="120" y="0" width="150" height="28" rx="14" fill="#1a2a4a" stroke="#fbbf24" stroke-width="1" opacity="0.8"/>
-    <text x="195" y="19" font-family="Arial" font-size="12" fill="#fbbf24" text-anchor="middle">🔎 Threat Intel</text>
-    <!-- Tag 3 -->
-    <rect x="280" y="0" width="160" height="28" rx="14" fill="#1a2a4a" stroke="#34d399" stroke-width="1" opacity="0.8"/>
-    <text x="360" y="19" font-family="Arial" font-size="12" fill="#34d399" text-anchor="middle">🛡️ Malware Analysis</text>
-    <!-- Tag 4 -->
-    <rect x="450" y="0" width="150" height="28" rx="14" fill="#1a2a4a" stroke="#a78bfa" stroke-width="1" opacity="0.8"/>
-    <text x="525" y="19" font-family="Arial" font-size="12" fill="#a78bfa" text-anchor="middle">📊 VirusTotal API</text>
-    <!-- Tag 5 -->
-    <rect x="610" y="0" width="110" height="28" rx="14" fill="#1a2a4a" stroke="#fb7185" stroke-width="1" opacity="0.8"/>
-    <text x="665" y="19" font-family="Arial" font-size="12" fill="#fb7185" text-anchor="middle">🔴 SOC Ready</text>
+  <!-- Tags row -->
+  <g transform="translate(200, 190)">
+    <!-- Python -->
+    <rect x="0"   y="0" width="96"  height="26" rx="13" fill="#1a2a4a" stroke="#7dd3fc"  stroke-width="1"/>
+    <text x="48"  y="17" font-family="Arial" font-size="11" fill="#7dd3fc"  text-anchor="middle">🐍 Python 3</text>
+    <!-- Threat Intel -->
+    <rect x="106" y="0" width="118" height="26" rx="13" fill="#1a2a4a" stroke="#fbbf24"  stroke-width="1"/>
+    <text x="165" y="17" font-family="Arial" font-size="11" fill="#fbbf24"  text-anchor="middle">🔎 Threat Intel</text>
+    <!-- Malware Analysis -->
+    <rect x="234" y="0" width="140" height="26" rx="13" fill="#1a2a4a" stroke="#34d399"  stroke-width="1"/>
+    <text x="304" y="17" font-family="Arial" font-size="11" fill="#34d399"  text-anchor="middle">🛡️ Malware Analysis</text>
+    <!-- VirusTotal -->
+    <rect x="384" y="0" width="130" height="26" rx="13" fill="#1a2a4a" stroke="#a78bfa"  stroke-width="1"/>
+    <text x="449" y="17" font-family="Arial" font-size="11" fill="#a78bfa"  text-anchor="middle">📊 VirusTotal API</text>
+    <!-- SOC Ready -->
+    <rect x="524" y="0" width="96"  height="26" rx="13" fill="#1a2a4a" stroke="#fb7185"  stroke-width="1"/>
+    <text x="572" y="17" font-family="Arial" font-size="11" fill="#fb7185"  text-anchor="middle">🔴 SOC Ready</text>
   </g>
 
-  <!-- Right side stats panel -->
-  <g transform="translate(980, 60)">
-    <rect width="240" height="200" rx="16" fill="#0d1830" stroke="#263252" stroke-width="1"/>
-    <rect width="240" height="3" rx="1" fill="url(#accent)" y="0"/>
-    <!-- Stat 1 -->
-    <text x="120" y="50" font-family="'Courier New', monospace" font-size="32" font-weight="700" fill="#ff4d4d" text-anchor="middle">18</text>
-    <text x="120" y="70" font-family="Arial" font-size="12" fill="#b7c3df" text-anchor="middle">IOCs Extracted</text>
-    <!-- Divider -->
-    <line x1="20" y1="85" x2="220" y2="85" stroke="#263252" stroke-width="1"/>
-    <!-- Stat 2 -->
-    <text x="80" y="122" font-family="'Courier New', monospace" font-size="26" font-weight="700" fill="#34d399" text-anchor="middle">5/5</text>
-    <text x="80" y="140" font-family="Arial" font-size="11" fill="#b7c3df" text-anchor="middle">Confirmed</text>
-    <!-- Divider vertical -->
-    <line x1="140" y1="92" x2="140" y2="155" stroke="#263252" stroke-width="1"/>
-    <!-- Stat 3 -->
-    <text x="190" y="122" font-family="'Courier New', monospace" font-size="26" font-weight="700" fill="#fb7185" text-anchor="middle">60</text>
-    <text x="190" y="140" font-family="Arial" font-size="11" fill="#b7c3df" text-anchor="middle">Max Detections</text>
-    <!-- Divider -->
-    <line x1="20" y1="158" x2="220" y2="158" stroke="#263252" stroke-width="1"/>
-    <!-- Source -->
-    <text x="120" y="182" font-family="Arial" font-size="11" fill="#7dd3fc" text-anchor="middle">Source: Akira Ransomware</text>
-    <text x="120" y="197" font-family="Arial" font-size="10" fill="#b7c3df" text-anchor="middle">Unit42 · Palo Alto Networks</text>
+  <!-- Author line -->
+  <text x="202" y="254"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" fill="#3a5070">
+    Muhammad Ahmad  ·  MS Cybersecurity  ·  SOC | Threat Intelligence | Cloud Security
+  </text>
+
+  <!-- ── RIGHT: Stats Panel ── -->
+  <g transform="translate(910, 68)">
+    <!-- Card -->
+    <rect width="330" height="210" rx="16"
+          fill="#0d1830" stroke="#263252" stroke-width="1.2"/>
+    <!-- Top accent strip -->
+    <rect width="330" height="3" rx="1.5" fill="url(#accent)"/>
+
+    <!-- Stat: IOCs Extracted -->
+    <text x="165" y="58"
+          font-family="'Courier New', Courier, monospace"
+          font-size="38" font-weight="700" fill="#ff4d4d" text-anchor="middle">18</text>
+    <text x="165" y="78"
+          font-family="Arial" font-size="12" fill="#b7c3df" text-anchor="middle">IOCs Extracted</text>
+
+    <!-- Horizontal divider -->
+    <line x1="24" y1="94" x2="306" y2="94" stroke="#263252" stroke-width="1"/>
+
+    <!-- Left stat: Confirmed -->
+    <text x="95" y="132"
+          font-family="'Courier New', Courier, monospace"
+          font-size="30" font-weight="700" fill="#34d399" text-anchor="middle">5/5</text>
+    <text x="95" y="150"
+          font-family="Arial" font-size="11" fill="#b7c3df" text-anchor="middle">Confirmed</text>
+
+    <!-- Vertical divider -->
+    <line x1="165" y1="100" x2="165" y2="163" stroke="#263252" stroke-width="1"/>
+
+    <!-- Right stat: Max Detections -->
+    <text x="240" y="132"
+          font-family="'Courier New', Courier, monospace"
+          font-size="30" font-weight="700" fill="#fb7185" text-anchor="middle">60</text>
+    <text x="240" y="150"
+          font-family="Arial" font-size="11" fill="#b7c3df" text-anchor="middle">Max Detections</text>
+
+    <!-- Horizontal divider -->
+    <line x1="24" y1="166" x2="306" y2="166" stroke="#263252" stroke-width="1"/>
+
+    <!-- Source label -->
+    <text x="165" y="188"
+          font-family="Arial" font-size="12" fill="#7dd3fc" text-anchor="middle">Source: Akira Ransomware</text>
+    <text x="165" y="204"
+          font-family="Arial" font-size="11" fill="#b7c3df" text-anchor="middle">Unit42 · Palo Alto Networks</text>
   </g>
 
-  <!-- Bottom bar -->
-  <rect x="0" y="308" width="1280" height="12" fill="url(#glow)"/>
-  <rect x="0" y="317" width="1280" height="3" fill="url(#accent)" opacity="0.3"/>
-
-  <!-- Author tag bottom left -->
-  <text x="20" y="308" font-family="'Courier New', monospace" font-size="11" fill="#4a6080">Muhammad Ahmad · MS Cybersecurity · SOC | Threat Intelligence | Cloud Security</text>
+  <!-- Bottom accent bar -->
+  <rect x="0" y="337" width="1280" height="3" fill="url(#accent)" opacity="0.35"/>
 </svg>
